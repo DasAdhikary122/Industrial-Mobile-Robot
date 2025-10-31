@@ -34,7 +34,9 @@ This distributed structure improves response time, modularity, and system scalab
 - Sensor & Motor Fusion:Lidar, encoders, and motor drivers integrated for smooth operation.
 
 ---
+## ROS: This project is fully supported ROS2 JAZZY and gazebo harmonic
 ## URDF
+
 :- there is 2 urdf pkg one is one is just a urdf pkg, in 1st file the mobile robot is spawn in gazebo and rviz and second one is created as teleop based urdf with full workspace .
   1) urdf pkg:- iiest_amr_description
   2) teleop based urdf with full workspace created:- iiest_amr_ws
@@ -43,36 +45,88 @@ This distributed structure improves response time, modularity, and system scalab
 
 🧱 1️⃣ Create the workspace structure
 
+```bash
 mkdir -p ~/imr_ws/src
 cd ~/imr_ws/src
+```
 
 download the files  iiest_amr_description, and put it in the created imr_ws workspace/src.
 
 back to workspace:
+
 ---
 
 Navigate into the extracted workspace folder using terminal:
 
+```bash
 cd imr_ws
-
+```
 🖥️ Then in Terminal 1 – Launch Gazebo with Robot
 
+```bash
 colcon build
 source install/setup.bash
 ros2 launch iiest_amr_description gazebo.launch.py
+```
 
+🖥️ Then in Terminal 2 – Launch rviz with Robot
 
-🖥️ Then in Terminal 2 – Launch Gazebo with Robot
+```bash
 colcon build
 source install/setup.bash
 ros2 launch iiest_amr_description display.launch.py
+```
+
+---
+
+
+2)for teleop based urdf with full workspace created:- iiest_amr_ws:
+
+Navigate into the extracted workspace folder using terminal:
+
+```bash
+cd iiest_imr_ws
+```
+###🖥️ Then in Terminal 1 – Launch Gazebo with Robot
+
+```bash
+colcon build
+source install/setup.bash
+ros2 launch iiest_amr_description gazebo.launch.py
+```
+
+###🖥️ Then in Terminal 2 – Launch rviz with Robot
+
+```bash
+colcon build
+source install/setup.bash
+ros2 launch iiest_amr_description display.launch.py
+```
+### 🖥️ Then in Terminal 3 – Teleoperation Control
+
+```bash
+
+colcon build
+source install/setup.bash
+ros2 run teleop_twist_keyboard teleop_twist_keyboard
+```
 
 
 
 
+### 🎮 Control Keys
+
+* `i` → Move forward
+* `,` → Move backward
+* `j` → Turn left
+* `l` → Turn right
+* `k` → Stop
+
+(Press `CTRL+C` to stop teleoperation.)
 
 
 ---
+
 
 
 🧮 System Components
