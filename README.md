@@ -80,7 +80,7 @@ ros2 launch iiest_amr_description display.launch.py
 ---
 
 
-##for teleop based urdf with full workspace created:- iiest_amr_ws:
+## for teleop based urdf with full workspace created:- iiest_amr_ws:
 
 Navigate into the extracted workspace folder using terminal:
 
