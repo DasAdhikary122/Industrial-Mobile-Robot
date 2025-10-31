@@ -41,7 +41,7 @@ This distributed structure improves response time, modularity, and system scalab
   1) urdf pkg:- iiest_amr_description
   2) teleop based urdf with full workspace created:- iiest_amr_ws
 
-1) for iiest_amr_description
+## for iiest_amr_description
 
 🧱 1️⃣ Create the workspace structure
 
@@ -80,7 +80,7 @@ ros2 launch iiest_amr_description display.launch.py
 ---
 
 
-2)for teleop based urdf with full workspace created:- iiest_amr_ws:
+##for teleop based urdf with full workspace created:- iiest_amr_ws:
 
 Navigate into the extracted workspace folder using terminal:
 
