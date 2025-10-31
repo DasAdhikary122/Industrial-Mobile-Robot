@@ -146,7 +146,7 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 
 
 ---
-![](remote_front.png)
+![](report_front)
 
 📧 Contact
 
